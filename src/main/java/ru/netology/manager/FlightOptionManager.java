@@ -27,8 +27,8 @@ public class FlightOptionManager {
                 tmp[tmp.length - 1] = option;
                 result = tmp;
             }
-            if (result.length == 0) throw new NotFoundException("Рейсы не найдены");
         }
+        if (result.length == 0) throw new NotFoundException("Рейсы не найдены");
         Arrays.sort(result);
         return result;
     }
